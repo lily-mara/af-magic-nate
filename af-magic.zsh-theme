@@ -21,9 +21,7 @@ eval my_orange='$FG[214]'
 # right prompt
 if type "virtualenv_prompt_info" > /dev/null
 then
-	RPROMPT='$(virtualenv_prompt_info)$my_gray%n%{$reset_color%}%'
-else
-	RPROMPT='$my_gray%n%{$reset_color%}%'
+	RPROMPT='$(virtualenv_prompt_info)'
 fi
 
 # git settings
